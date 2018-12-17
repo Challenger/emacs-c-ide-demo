@@ -55,6 +55,37 @@
 
 ;; activate whitespace-mode to view all whitespace characters
 (global-set-key (kbd "C-c w") 'whitespace-mode)
-(windmove-default-keybindings)
+
+(windmove-default-keybindings 'meta)
+(global-set-key (kbd "ESC <left>")  'windmove-left)
+(global-set-key (kbd "ESC <right>") 'windmove-right)
+(global-set-key (kbd "ESC <up>")    'windmove-up)
+(global-set-key (kbd "ESC <down>")  'windmove-down)
+
+;; Package: golden-ratio
+(use-package golden-ratio
+  :config
+  (golden-ratio-mode))
+
+(winner-mode 1)
+
+(add-to-list 'initial-frame-alist '(fullscreen . maximized))
+(if (eq system-type 'darwin) ;; mac specific settings
+    (progn (setq mac-option-modifier 'control)
+           (setq mac-control-modifier 'super)
+           (setq mac-command-modifier 'meta)
+           (global-set-key [kp-delete] 'delete-char) ;; sets fn-delete to be right-delete
+           (customize-set-variable 'menu-bar-mode t))
+  (global-set-key (kbd "s-k") 'kill-this-buffer)
+  (global-set-key (kbd "s-K") (lambda () "Close the current buffer and delete the window" (interactive) (progn (kill-this-buffer) (delete-window))))
+  (customize-set-variable 'menu-bar-mode nil))
+
+(global-set-key (kbd "<f5>") (lambda () "Push point in the global mark ring without activating region" (interactive) (push-mark (point) t nil)))
+(global-set-key (kbd "<f6>") 'pop-global-mark)
+(global-set-key (kbd "<f7>") (lambda () "Move cursor to last mark position of current buffer. Call this repeatedly will cycle all positions in `mark-ring'. URL `http://ergoemacs.org/emacs/emacs_jump_to_previous_position.html'" (interactive) (set-mark-command t)))
+;; (global-set-key (kbd "<f7>") 'point-to-register)
+(global-set-key (kbd "<f8>") 'register-to-point)
+
+(global-set-key (kbd "<f9>") 'speedbar)
 
 (provide 'setup-general)
