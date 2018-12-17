@@ -40,7 +40,7 @@
 ;; Package: volatile-highlights
 ;; GROUP: Editing -> Volatile Highlights
 (use-package volatile-highlights
-  :init
+  :config
   (volatile-highlights-mode t))
 
 ;; Package: undo-tree
