@@ -20,7 +20,10 @@
 ;; (require 'setup-ggtags)
 (require 'setup-cedet)
 (require 'setup-editing)
-
+(require 'setup-projectile)
+(require 'setup-js)
+(require 'setup-ts)
+(require 'setup-webmode)
 
 
 ;; function-args
