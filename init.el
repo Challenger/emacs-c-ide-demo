@@ -21,6 +21,7 @@
 (require 'setup-cedet)
 (require 'setup-editing)
 (require 'setup-projectile)
+(require 'setup-java)
 (require 'setup-js)
 (require 'setup-ts)
 (require 'setup-webmode)
