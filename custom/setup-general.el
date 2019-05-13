@@ -88,4 +88,16 @@
 
 (global-set-key (kbd "<f9>") 'speedbar)
 
+(defun er-copy-file-name-to-clipboard (&optional arg)
+  "Copy the current buffer file name to the clipboard."
+  (interactive "P")
+  (let ((filename (if (equal major-mode 'dired-mode)
+                      default-directory
+                    (if arg
+                        (file-name-nondirectory (buffer-file-name))
+                      (buffer-file-name)))))
+    (when filename
+      (kill-new filename)
+      (message "Copied buffer file name '%s' to the clipboard." filename))))
+
 (provide 'setup-general)
