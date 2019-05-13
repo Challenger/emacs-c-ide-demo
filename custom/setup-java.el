@@ -10,6 +10,8 @@
   (meghanada-mode)
   (flycheck-mode))
 
-;; (add-hook 'java-mode-hook 'my-java-meghanda-mode-hook)
+(add-hook 'java-mode-hook 'my-java-meghanda-mode-hook)
+
+(add-to-list 'auto-mode-alist '("\\.gradle\\'" . groovy-mode))
 
 (provide 'setup-java)
