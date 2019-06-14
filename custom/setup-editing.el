@@ -316,4 +316,6 @@ Position the cursor at it's beginning, according to the current mode."
   :custom
   (ag-highlight-search t))
 
+(use-package wgrep)
+
 (provide 'setup-editing)
