@@ -54,6 +54,11 @@
  '(display-time-24hr-format t)
  '(display-time-day-and-date t)
  '(display-time-mode t)
+ '(helm-ff-lynx-style-map t)
+ '(helm-grep-use-ioccur-style-keys t)
+ '(helm-imenu-lynx-style-map t)
+ '(helm-occur-use-ioccur-style-keys t)
+ '(helm-semantic-lynx-style-map t)
  '(menu-bar-mode nil)
  '(package-archive-priorities (quote (("gnu" . 90) ("melpa" . 50) ("melpa-stable" . 80))))
  '(package-archives
@@ -63,7 +68,14 @@
      ("melpa-stable" . "https://stable.melpa.org/packages/"))))
  '(package-selected-packages
    (quote
-    (wgrep color-theme-sanityinc-tomorrow markdown-mode dired-rainbow rainbow-mode groovy-imports company-ansible company-emacs-eclim flymake-yaml yaml-imenu yaml-mode wgrep-ag wgrep-helm ag meghanada duplicate-thing feature-mode gradle-mode groovy-mode helm-ag web-mode tide company-web company-tern xref-js2 js2-mode json-mode magit zygospore helm-gtags helm yasnippet ws-butler volatile-highlights use-package undo-tree iedit dtrt-indent counsel-projectile company clean-aindent-mode anzu helm projectile smartparens comment-dwim-2 helm-projectile golden-ratio helm-swoop flymake-less less-css-mode)))
+    (fish-completion fish-mode wgrep color-theme-sanityinc-tomorrow markdown-mode dired-rainbow rainbow-mode groovy-imports company-ansible company-emacs-eclim flymake-yaml yaml-imenu yaml-mode wgrep-ag wgrep-helm ag meghanada duplicate-thing feature-mode gradle-mode groovy-mode helm-ag web-mode tide company-web company-tern xref-js2 js2-mode json-mode magit zygospore helm-gtags helm yasnippet ws-butler volatile-highlights use-package undo-tree iedit dtrt-indent counsel-projectile company clean-aindent-mode anzu helm projectile smartparens comment-dwim-2 helm-projectile golden-ratio helm-swoop flymake-less less-css-mode)))
+ '(prog-mode-hook
+   (quote
+    (turn-on-smartparens-strict-mode ws-butler-mode clean-aindent-mode yas-minor-mode
+                                     (lambda nil
+                                       (interactive)
+                                       (setq show-trailing-whitespace 1))
+                                     subword-mode)))
  '(projectile-other-file-alist
    (quote
     (("cpp" "h" "hpp" "ipp")

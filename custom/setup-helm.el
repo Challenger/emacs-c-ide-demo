@@ -139,4 +139,7 @@
       (setq projectile-completion-system 'helm)
       (setq projectile-indexing-method 'alien))))
 
+(define-key helm-map (kbd "<left>") 'helm-previous-source)
+(define-key helm-map (kbd "<right>") 'helm-next-source)
+
 (provide 'setup-helm)
