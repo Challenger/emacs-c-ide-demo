@@ -54,6 +54,24 @@
  '(display-time-24hr-format t)
  '(display-time-day-and-date t)
  '(display-time-mode t)
+ '(grep-files-aliases
+   (quote
+    (("all" . "* .[!.]* ..?*")
+     ("el" . "*.el")
+     ("ch" . "*.[ch]")
+     ("c" . "*.c")
+     ("cc" . "*.cc *.cxx *.cpp *.C *.CC *.c++")
+     ("cchh" . "*.cc *.[ch]xx *.[ch]pp *.[CHh] *.CC *.HH *.[ch]++")
+     ("hh" . "*.hxx *.hpp *.[Hh] *.HH *.h++")
+     ("h" . "*.h")
+     ("l" . "[Cc]hange[Ll]og*")
+     ("m" . "[Mm]akefile*")
+     ("sql" . "*.sql")
+     ("tex" . "*.tex")
+     ("texi" . "*.texi")
+     ("asm" . "*.[sS]")
+     ("java" . "*.java")
+     ("js" . "*.[jt]s"))))
  '(helm-ff-lynx-style-map t)
  '(helm-grep-use-ioccur-style-keys t)
  '(helm-imenu-lynx-style-map t)
@@ -68,7 +86,7 @@
      ("melpa-stable" . "https://stable.melpa.org/packages/"))))
  '(package-selected-packages
    (quote
-    (fish-completion fish-mode wgrep color-theme-sanityinc-tomorrow markdown-mode dired-rainbow rainbow-mode groovy-imports company-ansible company-emacs-eclim flymake-yaml yaml-imenu yaml-mode wgrep-ag wgrep-helm ag meghanada duplicate-thing feature-mode gradle-mode groovy-mode helm-ag web-mode tide company-web company-tern xref-js2 js2-mode json-mode magit zygospore helm-gtags helm yasnippet ws-butler volatile-highlights use-package undo-tree iedit dtrt-indent counsel-projectile company clean-aindent-mode anzu helm projectile smartparens comment-dwim-2 helm-projectile golden-ratio helm-swoop flymake-less less-css-mode)))
+    (gnu-elpa-keyring-update flymake-json fish-completion fish-mode wgrep color-theme-sanityinc-tomorrow markdown-mode dired-rainbow rainbow-mode groovy-imports company-ansible company-emacs-eclim flymake-yaml yaml-imenu yaml-mode wgrep-ag wgrep-helm ag meghanada duplicate-thing feature-mode gradle-mode groovy-mode helm-ag web-mode tide company-web company-tern xref-js2 js2-mode json-mode magit zygospore helm-gtags helm yasnippet ws-butler volatile-highlights use-package undo-tree iedit dtrt-indent counsel-projectile company clean-aindent-mode anzu helm projectile smartparens comment-dwim-2 helm-projectile golden-ratio helm-swoop flymake-less less-css-mode)))
  '(prog-mode-hook
    (quote
     (turn-on-smartparens-strict-mode ws-butler-mode clean-aindent-mode yas-minor-mode
@@ -106,4 +124,4 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(default ((t (:family "DejaVu Sans Mono")))))
+ '(default ((t (:height 85 :family "DejaVu Sans Mono")))))
