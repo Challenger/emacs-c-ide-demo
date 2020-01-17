@@ -54,6 +54,9 @@
  '(display-time-24hr-format t)
  '(display-time-day-and-date t)
  '(display-time-mode t)
+ '(exec-path
+   (quote
+    ("/usr/local/bin" "/usr/bin" "/bin" "/usr/sbin" "/sbin" "/Applications/Emacs.app/Contents/MacOS/bin-x86_64-10_14" "/Applications/Emacs.app/Contents/MacOS/libexec-x86_64-10_14" "/Applications/Emacs.app/Contents/MacOS/libexec" "/Applications/Emacs.app/Contents/MacOS/bin")))
  '(grep-files-aliases
    (quote
     (("all" . "* .[!.]* ..?*")
@@ -80,7 +83,7 @@
  '(helm-semantic-lynx-style-map t)
  '(lsp-java-vmargs
    (quote
-    ("-noverify" "-Xmx1G" "-XX:+UseG1GC" "-XX:+UseStringDeduplication" "-javaagent:/home/16697063/src/tools/lombok.jar")))
+    ("-noverify" "-Xmx1G" "-XX:+UseG1GC" "-XX:+UseStringDeduplication" "-javaagent:/Users/16697063/src/tools/lombok.jar")))
  '(menu-bar-mode nil)
  '(package-archive-priorities (quote (("gnu" . 90) ("melpa" . 50) ("melpa-stable" . 80))))
  '(package-archives
