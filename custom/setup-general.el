@@ -74,6 +74,7 @@
     (progn (setq mac-option-modifier 'control)
            (setq mac-control-modifier 'super)
            (setq mac-command-modifier 'meta)
+           (setq insert-directory-program "/usr/local/bin/gls")
            (global-set-key [kp-delete] 'delete-char) ;; sets fn-delete to be right-delete
            (customize-set-variable 'menu-bar-mode t))
   (global-set-key (kbd "s-k") 'kill-this-buffer)

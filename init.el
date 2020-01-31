@@ -51,6 +51,7 @@
  '(compile-command "make -s -j3")
  '(default-input-method "russian-computer")
  '(delete-selection-mode nil)
+ '(dired-use-ls-dired (quote unspecified))
  '(display-time-24hr-format t)
  '(display-time-day-and-date t)
  '(display-time-mode t)
