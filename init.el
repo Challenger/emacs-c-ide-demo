@@ -58,6 +58,9 @@
  '(exec-path
    (quote
     ("/usr/local/bin" "/usr/bin" "/bin" "/usr/sbin" "/sbin" "/Applications/Emacs.app/Contents/MacOS/bin-x86_64-10_14" "/Applications/Emacs.app/Contents/MacOS/libexec-x86_64-10_14" "/Applications/Emacs.app/Contents/MacOS/libexec" "/Applications/Emacs.app/Contents/MacOS/bin")))
+ '(gnutls-trustfiles
+   (quote
+    ("/etc/ssl/certs/ca-certificates.crt" "/etc/pki/tls/certs/ca-bundle.crt" "/etc/ssl/ca-bundle.pem" "/usr/ssl/certs/ca-bundle.crt" "/usr/local/share/certs/ca-root-nss.crt" "/etc/ssl/cert.pem" "/usr/local/etc/openssl/cert.pem")))
  '(grep-files-aliases
    (quote
     (("all" . "* .[!.]* ..?*")
@@ -82,6 +85,8 @@
  '(helm-imenu-lynx-style-map t)
  '(helm-occur-use-ioccur-style-keys t)
  '(helm-semantic-lynx-style-map t)
+ '(lsp-java-java-path
+   "/Library/Java/JavaVirtualMachines/jdk1.8.0_221.jdk/Contents/Home/bin/java")
  '(lsp-java-vmargs
    (quote
     ("-noverify" "-Xmx1G" "-XX:+UseG1GC" "-XX:+UseStringDeduplication" "-javaagent:/Users/16697063/src/tools/lombok.jar")))
@@ -94,7 +99,7 @@
      ("melpa-stable" . "https://stable.melpa.org/packages/"))))
  '(package-selected-packages
    (quote
-    (helm-xref company-lsp helm-lsp lsp-java gnu-elpa-keyring-update flymake-json fish-completion fish-mode wgrep color-theme-sanityinc-tomorrow markdown-mode dired-rainbow rainbow-mode groovy-imports company-ansible company-emacs-eclim flymake-yaml yaml-imenu yaml-mode wgrep-ag wgrep-helm ag meghanada duplicate-thing feature-mode gradle-mode groovy-mode helm-ag web-mode tide company-web company-tern xref-js2 js2-mode json-mode magit zygospore helm-gtags helm yasnippet ws-butler volatile-highlights use-package undo-tree iedit dtrt-indent counsel-projectile company clean-aindent-mode anzu helm projectile smartparens comment-dwim-2 helm-projectile golden-ratio helm-swoop flymake-less less-css-mode)))
+    (color-theme-modern color-theme-sanityinc-solarized helm-xref company-lsp helm-lsp lsp-java gnu-elpa-keyring-update flymake-json fish-completion fish-mode wgrep color-theme-sanityinc-tomorrow markdown-mode dired-rainbow rainbow-mode groovy-imports company-ansible company-emacs-eclim flymake-yaml yaml-imenu yaml-mode wgrep-ag wgrep-helm ag meghanada duplicate-thing feature-mode gradle-mode groovy-mode helm-ag web-mode tide company-web company-tern xref-js2 js2-mode json-mode magit zygospore helm-gtags helm yasnippet ws-butler volatile-highlights use-package undo-tree iedit dtrt-indent counsel-projectile company clean-aindent-mode anzu helm projectile smartparens comment-dwim-2 helm-projectile golden-ratio helm-swoop flymake-less less-css-mode)))
  '(prog-mode-hook
    (quote
     (turn-on-smartparens-strict-mode ws-butler-mode clean-aindent-mode yas-minor-mode
